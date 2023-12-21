@@ -1,0 +1,108 @@
+body {
+    background-color: rgb(141, 130, 115);
+    text-align: justify;
+    font-family: sans-serif;
+}
+
+.image-container img{
+    background-size: cover;
+    background-image: url("https://img.freepik.com/free-photo/flat-lay-notebook-with-list-desk_23-2148938726.jpg?w=1380&t=st=1703077109~exp=1703077709~hmac=2e960ff138136ea7771cf5f807bd81f467cac3172a308848d7c4a361c1194ecd");
+    background-position: top;
+    background-repeat: no-repeat;
+    display: flex;
+    align-content: stretch;
+    border: none;
+    width: 100%; /* Make the image fill the container width */
+    height: 100%; /* Make the image fill the container height */
+    object-fit: cover; /* Maintain the aspect ratio and cover the container */
+    border-end-end-radius: 10px;
+    box-shadow: 2px 2px 5px #888888;
+}
+  
+  .todo-container {
+    background-color: #ffffff7d;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .input-container {
+    padding: 8px;
+    margin-right: 5px;
+    box-sizing: border-box;
+    border-radius: auto;
+  }
+  
+  button {
+    padding: 8px;
+    cursor: pointer;
+    border-radius: auto;
+  }
+
+  .addTask:hover {
+    background-color: rgb(252, 221, 162);
+
+  } 
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-items: flex-end;
+    align-items: center;
+    background-color: #e6e6e6;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+
+  li:hover {
+    background-color: rgb(255, 230, 168);
+  }
+
+  .checkbox-container {
+    display: flex;
+    align-items: flex-start;
+    justify-items: left;
+  }
+
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e6e6e6;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    opacity: 0;
+  }
+  
+  .removeButton {
+    background-color: hsl(from color h s l);
+    color: #e17373;
+    justify-content: space-between;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    transition: cubic-bezier();
+    column-gap: 10px;
+    align-content: flex-end;
+  }
+  
+  .removeButton:hover {
+    background-color: rgb(237, 209, 171);
+  }
+
+  
+  @media (max-width: 600px) {
+    input, button {
+      width: 100%;
+    }
+  }
